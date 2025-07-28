@@ -1,28 +1,40 @@
-import java.util.Scanner;
+class Student {
+    private String name;
+    private int rollNo;
+    private double cgpa;
+    private String department;
 
-public class Student {
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
 
-        System.out.print("Enter Student name: ");
-        String name = sc.nextLine();
+    public void setRollNo(int rollNo) {
+        this.rollNo = rollNo;
+    }
 
-        System.out.print("Enter roll number: ");
-        long rollNo = sc.nextLong();
+    public void setCgpa(double cgpa) {
+        this.cgpa = cgpa;
+    }
 
-        System.out.print("Enter CGPA: ");
-        double cgpa = sc.nextDouble();
-        sc.nextLine();
+    public void setDepartment(String department) {
+        this.department = department;
+    }
 
-        System.out.print("Enter address: ");
-        String address = sc.nextLine();
+    // Getters
+    public String getName() {
+        return name;
+    }
 
-        System.out.println("\n--- Student Details ---");
-        System.out.println("Name     : " + name);
-        System.out.println("Roll No  : " + rollNo);
-        System.out.println("CGPA     : " + cgpa);
-        System.out.println("Address  : " + address);
+    public int getRollNo() {
+        return rollNo;
+    }
 
-        sc.close();
+    public double getCgpa() {
+        return cgpa;
+    }
+
+    public String getDepartment() {
+        return department;
     }
 }
